@@ -90,7 +90,7 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-base text-text-secondary transition-colors hover:text-glow-blue"
+                  className="block w-full py-3 text-lg font-medium text-text-secondary transition-colors hover:text-glow-blue"
                   style={{ pointerEvents: 'auto' }}
                 >
                   {link.label}
@@ -98,7 +98,7 @@ export function Navbar() {
               ))}
               <a
                 href="/resume"
-                className="mt-2 w-fit rounded-lg border border-glow-blue/30 px-4 py-2 text-sm font-medium text-glow-blue transition-all hover:border-glow-blue hover:bg-glow-blue/10"
+                className="mt-4 block w-full text-center rounded-xl border border-glow-blue/30 px-4 py-3 text-base font-bold text-glow-blue transition-all hover:border-glow-blue hover:bg-glow-blue/10"
                 style={{ pointerEvents: 'auto' }}
               >
                 Resume

@@ -22,7 +22,7 @@ function ArchitectureDiagram({
   nodes: { label: string; type: string }[]
 }) {
   return (
-    <div className="flex flex-wrap items-center gap-2 py-4">
+    <div className="flex items-center gap-2 py-4 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {nodes.map((node, i) => (
         <div key={node.label} className="flex items-center gap-2">
           <div

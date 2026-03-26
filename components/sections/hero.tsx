@@ -51,11 +51,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
+          className="mb-12 flex w-full flex-col sm:w-auto sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
         >
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 rounded-xl bg-glow-blue px-8 py-3.5 text-base font-semibold text-background transition-all hover:bg-glow-blue-soft glow-blue"
+            className="group relative inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-xl bg-glow-blue px-8 py-4 text-base font-semibold text-background transition-all hover:bg-glow-blue-soft glow-blue"
             style={{ pointerEvents: 'auto' }}
           >
             View Work
@@ -65,7 +65,7 @@ export function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-xl border border-border bg-background/40 backdrop-blur-md px-8 py-3.5 text-base font-medium text-text-primary transition-all hover:border-cosmic-accent hover:text-cosmic-accent"
+            className="inline-flex w-full sm:w-auto justify-center items-center gap-2 rounded-xl border border-border bg-background/40 backdrop-blur-md px-8 py-4 text-base font-medium text-text-primary transition-all hover:border-cosmic-accent hover:text-cosmic-accent"
             style={{ pointerEvents: 'auto' }}
           >
             Contact
