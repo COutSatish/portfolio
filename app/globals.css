@@ -1,0 +1,227 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #06080D;
+  --foreground: #E8ECF4;
+  --card: rgba(15, 19, 25, 0.65);
+  --card-foreground: #E8ECF4;
+  --popover: rgba(10, 13, 20, 0.8);
+  --popover-foreground: #E8ECF4;
+  --primary: #7EB6FF;
+  --primary-foreground: #06080D;
+  --secondary: rgba(15, 19, 25, 0.5);
+  --secondary-foreground: #E8ECF4;
+  --muted: rgba(15, 19, 25, 0.5);
+  --muted-foreground: #8A94A6;
+  --accent: #C4A1FF;
+  --accent-foreground: #06080D;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: rgba(26, 32, 48, 0.6);
+  --input: rgba(26, 32, 48, 0.6);
+  --ring: #7EB6FF;
+  --chart-1: #7EB6FF;
+  --chart-2: #C4A1FF;
+  --chart-3: #B8D4FF;
+  --chart-4: #D9CCFF;
+  --chart-5: #8A94A6;
+  --radius: 1.125rem;
+
+  --surface: rgba(12, 15, 23, 0.55);
+  --glow-blue: #7EB6FF;
+  --glow-blue-soft: #B8D4FF;
+  --cosmic-accent: #C4A1FF;
+  --cosmic-glow: #D9CCFF;
+  --text-primary: #E8ECF4;
+  --text-secondary: #9BA5B7;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
+  --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-surface: var(--surface);
+  --color-glow-blue: var(--glow-blue);
+  --color-glow-blue-soft: var(--glow-blue-soft);
+  --color-cosmic-accent: var(--cosmic-accent);
+  --color-cosmic-glow: var(--cosmic-glow);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply text-foreground;
+    background: transparent;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #06080D;
+}
+
+body {
+  background: transparent;
+  color: #E8ECF4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06080D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A2030;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7EB6FF;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 20px rgba(126, 182, 255, 0.12), 0 0 40px rgba(126, 182, 255, 0.04);
+}
+
+.glow-blue-strong {
+  box-shadow: 0 0 30px rgba(126, 182, 255, 0.2), 0 0 60px rgba(126, 182, 255, 0.08);
+}
+
+.glow-cosmic {
+  box-shadow: 0 0 20px rgba(196, 161, 255, 0.12), 0 0 40px rgba(196, 161, 255, 0.04);
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #7EB6FF, #B8D4FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cosmic {
+  background: linear-gradient(135deg, #7EB6FF, #C4A1FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(26, 32, 48, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 32, 48, 0.15) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Glass card effect for all card/surface elements */
+.glass-card {
+  background: rgba(15, 19, 25, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-surface {
+  background: rgba(12, 15, 23, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Starfield subtle overlay */
+.bg-stars {
+  background-image: radial-gradient(1px 1px at 20px 30px, rgba(126, 182, 255, 0.15), transparent),
+    radial-gradient(1px 1px at 40px 70px, rgba(196, 161, 255, 0.1), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(184, 212, 255, 0.12), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(126, 182, 255, 0.08), transparent),
+    radial-gradient(1px 1px at 160px 30px, rgba(196, 161, 255, 0.1), transparent);
+  background-size: 200px 100px;
+}
+
+/* ─── UI/UX Micro-interactions ─── */
+
+/* Card hover lift + border glow */
+.card-hover {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(126, 182, 255, 0.1), 0 0 20px rgba(126, 182, 255, 0.06);
+  border-color: rgba(126, 182, 255, 0.35);
+}
+
+/* Subtle scale on skill tags */
+.skill-tag {
+  transition: transform 0.15s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.06);
+}
+
+/* Section divider gradient */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(126, 182, 255, 0.2) 50%, transparent 100%);
+}
+
+/* Spline watermark hide */
+a[href*="spline.design"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+
+/* Resume page: let Spline track cursor, but keep interactive elements clickable */
+.resume-content {
+  pointer-events: none;
+}
+
+.resume-content a,
+.resume-content button,
+.resume-content input,
+.resume-content textarea,
+.resume-content select {
+  pointer-events: auto;
+}
+
