@@ -14,37 +14,22 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Satish Kumar Pyata | Senior Java Full Stack Developer",
+  title: "Satish Kumar P | Senior Java Full Stack Developer",
   description:
-    "Portfolio of Satish Kumar Pyata - Senior Java Full Stack Developer with 9+ years of experience in distributed systems, microservices, Spring Boot, Kafka, AWS, Angular, and React.",
+    "Portfolio of Satish Kumar P - Senior Java Full Stack Developer with 9+ years of experience in financial services, microservices, Spring Boot, Kafka, AWS, Angular, and React.",
   keywords: [
-    "Satish Kumar Pyata",
-    "Backend Engineer",
+    "Satish Kumar P",
+    "Senior Java Full Stack Developer",
     "Java Developer",
     "Spring Boot",
     "Kafka",
     "AWS",
-    "Kubernetes",
-    "Distributed Systems",
+    "Angular",
+    "React",
+    "Financial Services",
+    "Morgan Stanley",
   ],
-  authors: [{ name: "Satish Kumar Pyata" }],
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+  authors: [{ name: "Satish Kumar P" }],
 }
 
 export const viewport: Viewport = {
