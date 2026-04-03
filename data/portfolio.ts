@@ -286,20 +286,20 @@ export const skillCategories = [
 
 export const timeline = [
   {
-    year: "Aug 2018 - Dec 2019",
-    title: "M.S. Computer Science",
-    org: "Lawrence Technological University, Southfield, MI",
-    description:
-      "Specialized in Distributed Systems, Big Data, and AI Integration. Concurrent internship at Verizon.",
-    type: "education" as const,
-  },
-  {
     year: "Jul 2016 - Jul 2018",
     title: "Junior Java Developer",
     org: "Value Momentum, Hyderabad (Client: GEICO)",
     description:
       "Built and enhanced enterprise insurance web applications for GEICO using Guidewire PolicyCenter and ClaimCenter. Delivered full-stack Java solutions with microservices architecture, RESTful & SOAP APIs, and scalable data layers supporting millions of policyholders.",
     type: "work" as const,
+  },
+  {
+    year: "Aug 2018 - Dec 2019",
+    title: "M.S. Computer Science",
+    org: "Lawrence Technological University, Southfield, MI",
+    description:
+      "Specialized in Distributed Systems, Big Data, and AI Integration. Concurrent internship at Verizon.",
+    type: "education" as const,
   },
   {
     year: "May 2019 - Dec 2019",
@@ -337,13 +337,20 @@ export const timeline = [
 
 export const certifications = [
   {
+    name: "Google Professional Data Engineer",
+    issuer: "Google",
+    date: "Jan 2025",
+    expires: "Jan 2027",
+    badge: "professional",
+  },
+  {
     name: "Google Cloud Professional Cloud Developer",
     issuer: "Google Cloud",
     date: "2025",
     badge: "professional",
   },
   {
-    name: "Guidewire ClaimCenter Associate",
+    name: "Guidewire ClaimCenter Associate - InsuranceSuite 10.0",
     issuer: "Guidewire Software",
     date: "Associate Certification",
     badge: "professional",
@@ -355,19 +362,37 @@ export const certifications = [
     badge: "google",
   },
   {
+    name: "Verizon Cloud Platform Job Simulation",
+    issuer: "Forage",
+    date: "May 2025",
+    badge: "cloud",
+  },
+  {
     name: "SQL (Intermediate)",
     issuer: "HackerRank",
     date: "Mar 2025",
     badge: "data",
   },
   {
-    name: "JPMC Advanced Software Engineering",
-    issuer: "Forage (J.P. Morgan)",
-    date: "Aug 2024",
+    name: "Artificial Intelligence",
+    issuer: "Programming Hub",
+    date: "Nov 2021",
     badge: "engineering",
   },
   {
+    name: "Python Certification Course",
+    issuer: "Programming Hub",
+    date: "Mar 2021",
+    badge: "data",
+  },
+  {
     name: "Python Data Structures",
+    issuer: "Coursera",
+    date: "Jun 2020",
+    badge: "data",
+  },
+  {
+    name: "Programming for Everybody (Python)",
     issuer: "Coursera",
     date: "Jun 2020",
     badge: "data",
