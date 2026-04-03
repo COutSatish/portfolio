@@ -8,7 +8,7 @@
 Welcome to the source code for my personal portfolio! This repository contains a modern, interactive, and fully responsive developer portfolio built to showcase my Software Engineering journey, key achievements, technical skills, and projects.
 
 ## 🚀 Live Demo
-**(https://satishs-portfolio.vercel.app)**
+**https://satishs-portfolio.vercel.app**
 
 ## ✨ Key Features
 - **Modern Tech Stack**: Built with Next.js (App Router), React 19, and Tailwind CSS.
