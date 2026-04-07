@@ -92,7 +92,7 @@ export default function ResumePage() {
               </div>
 
               <a
-                href="/Satish_Pyata_Resume.pdf"
+                href="/Satish_Kumar_P_Resume.pdf"
                 download
                 className="group flex shrink-0 items-center gap-2 rounded-xl border border-glow-blue bg-glow-blue/10 px-7 py-3.5 font-semibold text-glow-blue transition-all hover:bg-glow-blue/20 hover:glow-blue-strong"
                 style={{ pointerEvents: 'auto' }}

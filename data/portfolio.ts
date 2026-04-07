@@ -7,12 +7,12 @@ export const personalInfo = {
   email: "satishs.tech@gmail.com",
   phone: "+1 (470) 866-1440",
   github: "https://github.com/COutSatish",
-  linkedin: "https://www.linkedin.com/in/satishpyata/",
+  linkedin: "https://www.linkedin.com/in/satishpin/",
   location: "United States",
 }
 
 export const aboutText = {
-  philosophy: `I'm a Senior Java Full Stack Developer with around 9 years of experience delivering cloud-native, high-performance enterprise applications across financial services, telecom (5G/public safety broadband), and auto insurance industries. I specialize in end-to-end software development using Java/J2EE, microservices, RESTful APIs, Spring Boot, and front-end frameworks like Angular and React.`,
+  philosophy: `I'm a Senior Java Full Stack Developer with around 9 years of experience delivering cloud-native, high-performance enterprise applications across financial services, healthcare benefits, and auto insurance industries. I specialize in end-to-end software development using Java/J2EE, microservices, RESTful APIs, Spring Boot, and front-end frameworks like Angular and React.`,
   approach: `My engineering philosophy centers on scalability through thoughtful architecture, observability through comprehensive monitoring, and resilience through intelligent failure handling. From building real-time Kafka Streams pipelines for transaction monitoring and fraud detection to architecting Saga choreography across 12+ financial microservices — I build systems that don't just work, they scale, recover, and perform under pressure.`,
   focus: `Trusted technical leader with full development ownership at Morgan Stanley and BNY Mellon; I drive cross-team engineering standards, mentor junior developers, and deliver measurable business outcomes at enterprise scale. Experienced in Open Banking and fintech API development, with SOX/FINRA-compliant systems serving thousands of institutional clients.`,
 }
@@ -304,17 +304,17 @@ export const timeline = [
   {
     year: "May 2019 - Dec 2019",
     title: "Software Engineer Intern",
-    org: "Verizon, Detroit, MI",
+    org: "Delta Dental, Farmington Hills, MI",
     description:
-      "Part-time internship concurrent with Master's studies. Contributed to backend Java development and RESTful API integration on the subscriber management platform. Developed API endpoints for subscriber account management and service notifications using Spring Boot.",
+      "Part-time internship concurrent with Master's studies. Contributed to backend Java development and RESTful API integration on Delta Dental's healthcare claims processing and provider portal platform.",
     type: "work" as const,
   },
   {
     year: "Jan 2020 - Dec 2021",
     title: "Java Full Stack Developer",
-    org: "Verizon, Detroit, MI",
+    org: "Delta Dental, Farmington Hills, MI",
     description:
-      "Converted from intern to full-time. Contributed to Verizon's 5G network services platform and Verizon Frontline for public safety agencies. Built REST and Kafka-based microservices for subscriber management, 5G plan upgrades, and billing. Reduced query time by 22% and maintained 80%+ code coverage.",
+      "Converted from intern to full-time engineer. Contributed to the modernization of Delta Dental's healthcare benefits platform. Built REST and Kafka-based microservices for healthcare claims processing, member eligibility, and benefits administration. Reduced query time by 22% and maintained 80%+ code coverage.",
     type: "work" as const,
   },
   {
@@ -442,9 +442,9 @@ export const keyAchievements = [
   },
   {
     title: "Intern to Full-Time Conversion",
-    company: "Verizon",
+    company: "Delta Dental",
     description:
-      "Converted from intern to full-time engineer upon graduating, contributing to Verizon's 5G network services platform and Verizon Frontline, reducing downstream integration errors by 27%.",
+      "Converted from intern to full-time engineer upon graduating, contributing to Delta Dental's healthcare benefits platform, developing backend microservices for healthcare claims processing, and reducing downstream integration errors by 27%.",
     metric: "27%",
     metricLabel: "Fewer Integration Errors",
   },
