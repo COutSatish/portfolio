@@ -4,7 +4,7 @@ export const personalInfo = {
   headline: "I build cloud-native systems that scale and perform under pressure",
   highlightedText: "scale and perform",
   subtitle: "Java  |  Spring Boot  |  Kafka  |  AWS  |  Angular  |  React",
-  email: "satishs.tech@gmail.com",
+  email: "satishs.job@gmail.com",
   phone: "+1 (470) 866-1440",
   github: "https://github.com/COutSatish",
   linkedin: "https://www.linkedin.com/in/satishpin/",
